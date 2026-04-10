@@ -17,8 +17,6 @@ public class Chapter5 {
     }    
 }
 
-*/
-
 class Math{
     public Math() {
        
@@ -39,3 +37,90 @@ public class Chapter5 {
     System.out.println("10의 3승은 " + Math.power(10,3));
     }
 }
+
+
+import java.util.*;
+
+class Rect{
+    int width, height;
+    public Rect(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+    double getArea(){ 
+        return (double)(width*height);
+    }
+}
+
+public class Chapter5{
+
+    public static void main(String args[]) {
+        Rect[] obj = new Rect[5];
+        
+        for(int i = 0; i < obj.length; i++){
+            obj[i] = new Rect(i,i);
+        }
+        for(int i = 0; i < obj.length; i++) {
+            System.out.println(obj[i].getArea());
+        }
+    }
+}
+
+
+import java.util.*;
+
+class Movie {
+    public String title;
+    public String director;
+
+    public Movie(String title,String director) {
+        this.title = title;
+        this.director = director;
+    }
+
+    public String getAnswer() {
+        return (title +" " + director);
+        }
+
+}
+
+public class Chapter5{
+
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("몇개의 영화를 저장하시겠습니까?");
+        int count = sc.nextInt();
+        Movie[] obj = new Movie[count];
+        for(int i = 0; i < count; i++){
+            System.out.print("저장할 제목과 감독을 적어주세요");
+            String title = sc.next();
+            String director = sc.next();
+            obj[i] = new Movie(title,director);
+        }
+
+        for(int i = 0; i < count; i++){
+            System.out.println("제목과 감독은" + obj[i].getAnswer() + "입니다");
+        }
+    }
+}
+
+
+import java.util.*;
+
+public class Chapter5{
+
+    public static void main(String args[]){
+
+        try{
+            int result = 10/0;
+        }
+        catch(ArithmeticException e){ //catch () 안에 예외 타입을 넣을 변수가 있어야함
+            System.out.println("오류발생");
+        }
+        finally {
+            System.out.println("이것도 출력됨?");
+        }
+    }
+}
+
+*/
