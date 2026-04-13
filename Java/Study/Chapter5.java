@@ -125,41 +125,18 @@ public class Chapter5{
 
 import java.util.*;
 
-class Sta {
-    public Sta(){
-    }
-    public static int number;
-    public static String s;
-    static{
-        number = 23;
-        s = "아무거나";
-    }
-}
-
 public class Chapter5{
+    public static double minArray(double[] list) {
+        double min = list[0];
+
+        for(int i = 1; i< list.length; i++){
+            if(list[i]<min)
+        }
+    }
+
     public static void main(String args[]) {
-        System.out.println(Sta.number + " " + Sta.s);
+
     }
 }
-
 
 */
-
-import java.util.*;
-
-class Single{
-    private static Single instance = new Single();
-    private Single() {
-    }
-    public static Single getInstance() {
-        return instance;
-    }
-}
-
-public class Chapter5{
-    public static void main(String args[]){
-        Single obj1 = Single.getInstance();
-        Single obj2 = Single.getInstance();
-        System.out.println(obj1 + " " + obj2);
-    }
-}

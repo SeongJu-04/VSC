@@ -1,6 +1,4 @@
-
-
-import java.util.*;
+package Study;
 
 public class Chapter4_1 {
     private boolean isOn;
@@ -11,3 +9,4 @@ public class Chapter4_1 {
         return ("현재상태는 " + (isOn == true ? "켜짐" : "꺼짐"));
     }
 }
+

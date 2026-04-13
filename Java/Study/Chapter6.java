@@ -1,4 +1,4 @@
-package Action;
+package Study;
 
 /*
 class Vehicle {
