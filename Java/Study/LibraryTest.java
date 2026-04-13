@@ -1,3 +1,4 @@
+package Study;
 import java.util.*;
 
 class LibraryMember {
@@ -48,10 +49,26 @@ class FacultyMember extends LibraryMember {
 
 class Library {
     private String LibraryName;
+    private ArrayList<LibraryMember> memberList; // < > 안에 자료형이 들어가야하는데 libraryMember 의 경우 참조 자료형으로 들어갈 수 있음
+
     public Library(String LibraryName) {
         this.LibraryName = LibraryName;
+        this.memberList = new ArrayList<>() ;
     }
-    ArrayList <LibraryName> memberList = new Arraylist<>;
+
+    public void addMember(LibraryMember member) { //LibraryMember 의 형태를 가진 데이터를 member 로 하겠다고 정의 
+        this.memberList.add(member); 
+        System.out.println(member.getName() + "님이 " + this.LibraryName +  "회원으로 등록되었습니다.");
+    }
+
+    public void showAllMembersInfo() {
+        System.out.println("=== [" + this.LibraryName + "] 전체 회원 대출 정보 ===");
+        
+        for (LibraryMember member : memberList) {
+            // member는 부모 타입이지만, 실제로는 자식 객체들이므로 오버라이딩된 메소드가 알아서 호출됩니다!
+            member.printBorrowInfo();
+        }
+    }
 }
 
 public class LibraryTest {
