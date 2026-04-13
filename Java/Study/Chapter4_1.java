@@ -1,5 +1,4 @@
-package Study;
-
+/*
 public class Chapter4_1 {
     private boolean isOn;
     
@@ -10,3 +9,4 @@ public class Chapter4_1 {
     }
 }
 
+*/
