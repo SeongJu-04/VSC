@@ -124,3 +124,19 @@ public class Chapter5{
 }
 
 */
+
+import java.util.*;
+
+public class Chapter5{
+    public static double minArray(double[] list) {
+        double min = list[0];
+
+        for(int i = 1; i< list.length; i++){
+            if(list[i]<min)
+        }
+    }
+
+    public static void main(String args[]) {
+
+    }
+}
