@@ -1,5 +1,6 @@
-import java.util.*;
+package Study;
 
+/*
 // JVM 은 자바에 있는 가상 컴퓨터의 개념. JVM이 있기 때문에 동적할당시 다른 고급언어와는 다르게 자동 해제 & public static void main()문 먼저 실행 
 // JVM 안에 Garbage Collector가 있음 
 // 변수의 경우 낙타체(단어 시작 대문자),의미있는 이름(가독성),약어 지양(가독성)
@@ -53,3 +54,4 @@ public class MidTerm { // public class 의경우 2개 이상이면 안되면 한
     }
     
 }
+*/
